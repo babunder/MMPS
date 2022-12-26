@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/d8dp"
+    app:cardElevation="@dimen/d5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.youtube.player.YouTubeThumbnailView
+            android:id="@+id/ytThumbnail"
+            android:layout_width="@dimen/d75dp"
+            android:layout_height="@dimen/d75dp"
+            android:layout_marginEnd="@dimen/d8dp"
+            android:scaleType="fitXY"
+            android:layout_margin="@dimen/d4dp"
+            android:layout_marginRight="@dimen/d8dp" />
+
+        <TextView
+            android:id="@+id/tvYouTubeLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="@dimen/d8dp"
+            android:layout_marginStart="@dimen/d4dp"
+            android:textSize="@dimen/s16sp"
+            android:layout_marginLeft="@dimen/d4dp" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

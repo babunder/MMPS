@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/d250dp"
+    android:layout_margin="@dimen/d15dp"
+    app:cardElevation="@dimen/d5dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_room_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/grey"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/s16sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/ll_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_room_number"
+            android:layout_marginBottom="@dimen/d8dp"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/d8dp"
+            android:paddingEnd="@dimen/d8dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/room_type"
+                android:textColor="@color/black"
+                android:textSize="@dimen/s16sp" />
+
+            <TextView
+                android:id="@+id/tv_room_type"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="@string/room_type"
+                android:textColor="@color/black"
+                android:textSize="@dimen/s16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_capacity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_type"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/d8dp"
+            android:paddingEnd="@dimen/d8dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/room_capacity"
+                android:textColor="@color/black"
+                android:textSize="@dimen/s16sp" />
+
+            <TextView
+                android:id="@+id/tv_room_capacity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="@string/room_capacity"
+                android:textColor="@color/black"
+                android:textSize="@dimen/s16sp" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/v1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d1dp"
+            android:layout_below="@id/ll_capacity"
+            android:layout_marginTop="@dimen/d8dp"
+            android:layout_marginBottom="@dimen/d8dp"
+            android:background="@drawable/red_divider" />
+
+        <LinearLayout
+            android:id="@+id/ll_deposit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/v1"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/d8dp"
+            android:paddingEnd="@dimen/d8dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/room_deposit"
+                android:textColor="@color/black"
+                android:textSize="@dimen/s16sp" />
+
+            <TextView
+                android:id="@+id/tv_room_deposit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="@string/room_deposit"
+                android:textColor="@color/black"
+                android:textSize="@dimen/s16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_rent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_deposit"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/d8dp"
+            android:paddingEnd="@dimen/d8dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/room_rent"
+                android:textColor="@color/black"
+                android:textSize="@dimen/s16sp" />
+
+            <TextView
+                android:id="@+id/tv_room_rent"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="@string/room_rent"
+                android:textColor="@color/black"
+                android:textSize="@dimen/s16sp" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/v2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d1dp"
+            android:layout_below="@id/ll_rent"
+            android:layout_marginTop="@dimen/d8dp"
+            android:layout_marginBottom="@dimen/d8dp"
+            android:background="@drawable/red_divider" />
+
+        <LinearLayout
+            android:id="@+id/ll_tax"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/v2"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/d8dp"
+            android:paddingEnd="@dimen/d8dp">
+
+            <TextView
+                android:id="@+id/tv_room_tax_description"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:text="@string/tax"
+                android:textColor="@color/black"
+                android:textSize="@dimen/s16sp" />
+
+            <TextView
+                android:id="@+id/tv_room_tax_value"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="end"
+                android:text="@string/room_rent"
+                android:textColor="@color/black"
+                android:textSize="@dimen/s16sp" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/v3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d1dp"
+            android:layout_below="@id/ll_tax"
+            android:layout_marginTop="@dimen/d8dp"
+            android:layout_marginBottom="@dimen/d8dp"
+            android:background="@drawable/red_divider" />
+
+        <LinearLayout
+            android:id="@+id/ll_total"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/v3"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/d8dp"
+            android:paddingEnd="@dimen/d8dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/total"
+                android:textColor="@color/black"
+                android:textSize="@dimen/s16sp" />
+
+            <TextView
+                android:id="@+id/tv_total"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="@string/total"
+                android:textColor="@color/black"
+                android:textSize="@dimen/s16sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/v4"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d1dp"
+            android:layout_below="@id/ll_total"
+            android:layout_marginTop="@dimen/d8dp"
+            android:layout_marginBottom="@dimen/d8dp"
+            android:background="@drawable/red_divider" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/d323dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/d20dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardElevation="@dimen/d5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/d20dp">
+
+        <RelativeLayout
+            android:id="@+id/info_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/ivProjectPhoto"
+                android:layout_width="@dimen/d80dp"
+                android:layout_height="@dimen/d80dp"
+                android:layout_margin="@dimen/d8dp"/>
+
+            <TextView
+                android:id="@+id/tvProjectTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/s16sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                tools:text="विश्वनाथ सचदेव"
+                android:layout_marginTop="@dimen/d10dp"
+                android:layout_toEndOf="@id/ivProjectPhoto"
+                android:layout_toRightOf="@id/ivProjectPhoto"/>
+
+            <TextView
+                android:id="@+id/tvProjectDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/s16sp"
+                android:textColor="@color/black"
+                tools:text="21/06/2010"
+                android:layout_marginTop="@dimen/d5dp"
+                android:layout_below="@id/tvProjectTitle"
+                android:layout_toEndOf="@id/ivProjectPhoto"
+                android:layout_toRightOf="@id/ivProjectPhoto" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/tvProjectDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/info_layout"
+            android:layout_marginBottom="@dimen/d8dp"
+            android:layout_marginLeft="@dimen/d8dp"
+            android:layout_marginStart="@dimen/d8dp"
+            android:layout_toLeftOf="@+id/imgBtnPlus"
+            android:layout_toStartOf="@+id/imgBtnPlus"
+            android:ellipsize="end"
+            android:justificationMode="inter_word"
+            android:maxLines="3"
+            android:textColor="@color/black"
+            android:textSize="@dimen/s16sp"
+            tools:text="बरसों बाद मराठी पत्रकार संघमें आना और अपने बहुतसे पुराने पत्रकार मित्रोसे मिलना एक अनुभव रहा | संघके इमारतकी भव्यताभी अब प्रभावित करती है | इस इमारतसे एक भव्य सकारात्मक पत्रकारिताकी सन्देश जायें यही कामना है |" />
+
+        <ImageButton
+            android:id="@+id/imgBtnPlus"
+            android:layout_width="@dimen/d12dp"
+            android:layout_height="@dimen/d12dp"
+            android:layout_alignBottom="@+id/tvProjectDesc"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:src="@android:drawable/ic_input_add"
+            android:tint="@color/colorPrimary" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

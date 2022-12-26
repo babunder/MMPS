@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/d325dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/d150dp"
+        android:layout_height="@dimen/d150dp"
+        android:layout_gravity="center_horizontal"
+        app:srcCompat="@mipmap/logo_new" />
+
+    <TextView
+        android:id="@+id/tvLibraryName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/s16sp"
+        android:layout_gravity="center_horizontal"
+        tools:text="Mumbai marathi patrakar sangha"
+        android:textStyle="bold"
+        android:textColor="@color/red" />
+
+    <TextView
+        android:id="@+id/tvLibraryEst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/s14sp"
+        android:layout_gravity="center_horizontal"
+        tools:text="Sthapana 1941"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/d8dp"
+        android:textColor="@color/red"/>
+    <TextView
+        android:id="@+id/tvLibraryAddress1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/d8dp"
+        android:gravity="center_horizontal"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textSize="@dimen/s16sp"
+        tools:text="पत्रकार भवन, आझाद मैदान," />
+
+    <TextView
+        android:id="@+id/tvLibraryAddress2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/d8dp"
+        android:singleLine="false"
+        android:textColor="@color/black"
+        android:textSize="@dimen/s16sp"
+        tools:text="महानगरपालिका मार्ग," />
+
+</LinearLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/s16sp" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivCourse"
+            android:layout_width="@dimen/d40dp"
+            android:layout_height="@dimen/d40dp"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/d8dp"
+            android:background="@drawable/ic_new_stat_syllsbus" />
+
+        <TextView
+            android:id="@+id/tvSubjectDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/d8dp"
+            android:layout_toEndOf="@id/ivCourse"
+            android:layout_toRightOf="@id/ivCourse"
+            android:singleLine="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/s16sp"
+            android:layout_marginLeft="@dimen/d8dp" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d1dp"
+        android:layout_marginTop="@dimen/d8dp"
+        android:background="@android:color/black" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/rlSearchBooks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true"
+        android:layout_below="@id/toobar"
+        android:elevation="@dimen/d8dp"
+        android:layout_margin="@dimen/d14dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/etSeachBook"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/btnSearch"
+                android:layout_toStartOf="@id/btnSearch"
+                android:backgroundTint="@color/white"
+                android:hint="@string/book_name"
+                android:layout_alignTop="@id/btnSearch"
+                android:layout_alignBottom="@id/btnSearch"
+                android:singleLine="true"
+                android:textSize="@dimen/s16sp" />
+
+            <Button
+                android:id="@+id/btnSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:background="@color/colorPrimary"
+                android:drawableEnd="@drawable/ic_search"
+                android:drawableRight="@drawable/ic_search"
+                android:padding="@dimen/d4dp"
+                android:text="@string/search_books"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvObjectives"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

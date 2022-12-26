@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/s16sp"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <!--<fragment
+        android:name="com.google.android.youtube.player.YouTubePlayerSupportFragmentX"
+        android:id="@+id/youtube_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d200dp"/>-->
+    <com.google.android.youtube.player.YouTubePlayerView
+        android:id="@+id/youtube_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d200dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvVideoLinks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/d8dp"/>
+
+</LinearLayout>

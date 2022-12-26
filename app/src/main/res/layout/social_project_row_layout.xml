@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/d323dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/d20dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardElevation="@dimen/d5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivProjectPhoto"
+            android:layout_width="@dimen/d75dp"
+            android:layout_height="@dimen/d75dp"
+            android:layout_margin="@dimen/d8dp" />
+
+        <TextView
+            android:id="@+id/tvProjectTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/ivProjectPhoto"
+            android:layout_toEndOf="@id/ivProjectPhoto"
+            android:layout_toRightOf="@id/ivProjectPhoto"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/s16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvProjectDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvProjectTitle"
+            android:layout_toEndOf="@id/ivProjectPhoto"
+            android:layout_toRightOf="@id/ivProjectPhoto"
+            android:textColor="@color/black"
+            android:textSize="@dimen/s16sp" />
+
+        <TextView
+            android:id="@+id/tvProjectDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ivProjectPhoto"
+            android:layout_margin="@dimen/d8dp"
+            android:justificationMode="inter_word"
+            android:textColor="@color/black"
+            android:textSize="@dimen/s16sp" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

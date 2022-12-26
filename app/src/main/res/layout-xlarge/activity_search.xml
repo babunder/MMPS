@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:focusableInTouchMode="true">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toobar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textColor="@color/white"
+            android:textSize="@dimen/s24sp"
+            android:text="@string/smart_library"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="@dimen/d125dp"
+        android:layout_height="@dimen/d125dp"
+        android:src="@drawable/mhlibraries"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/d50dp"
+        android:layout_marginBottom="@dimen/d8dp"/>
+
+    <TextView
+        android:id="@+id/tvTagLine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivLogo"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_margin="@dimen/d8dp"
+        android:textSize="@dimen/s24sp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTagLine"
+        android:layout_margin="@dimen/d8dp">
+
+        <EditText
+            android:id="@+id/etSeachBook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:hint="@string/book_name"
+            android:textSize="@dimen/s24sp"
+            android:backgroundTint="@color/pink"
+            android:layout_toStartOf="@id/btnSearch"
+            android:layout_margin="@dimen/d8dp"
+            android:layout_toLeftOf="@id/btnSearch" />
+
+        <Button
+            android:id="@+id/btnSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/search_books"
+            android:layout_alignParentEnd="true"
+            android:textAllCaps="false"
+            android:textSize="@dimen/s24sp"
+            android:layout_marginEnd="@dimen/d8dp"
+            android:textColor="@color/white"
+            android:background="@color/colorPrimary"
+            android:layout_below="@id/tvTagLine"
+            android:padding="@dimen/d4dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/d8dp" />
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/imgViewTantravedLogo"
+        android:layout_width="@dimen/d125dp"
+        android:layout_height="@dimen/d125dp"
+        android:src="@drawable/tantraved_logo"
+        android:layout_above="@id/tvTantraved"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/tvTantraved"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="@string/tantraved"
+        android:gravity="center"
+        android:textSize="@dimen/s24sp"
+        android:layout_margin="@dimen/d8dp"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
