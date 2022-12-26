@@ -11,3 +11,5 @@ buildname.txt
 version.properties
 build_file_checksums.ser
 changelog.md
+.idea/
+app/build/
